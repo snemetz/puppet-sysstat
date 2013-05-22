@@ -31,3 +31,7 @@ Full configuration options:
       sa1_options   => '-S DISK',
       sa2_options   => '',
     }
+
+***
+
+CERIT Scientific Cloud, <support@cerit-sc.cz>
