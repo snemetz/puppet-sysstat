@@ -6,7 +6,7 @@ class sysstat (
   $sadc_options  = $sysstat::params::sadc_options,
   $sa1_options   = $sysstat::params::sa1_options,
   $sa2_options   = $sysstat::params::sa2_options,
-  $conf_sysstat  = $sysstat::params::conf_systat,
+  $conf_sysstat  = $sysstat::params::conf_sysstat,
 ) inherits sysstat::params {
 
   class { 'sysstat::install':
