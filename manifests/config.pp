@@ -14,6 +14,8 @@ class sysstat::config (
 
   if $::osfamily == 'Debian' {
     augeas { '/etc/default/sysstat':
+      incl    => '/etc/default/sysstat',
+      lens    => 'Shellvars.lns',
       context => '/files/etc/default/sysstat/',
       changes => [
         "set ENABLED     '\"${enabled}\"'",
