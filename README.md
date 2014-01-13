@@ -7,7 +7,7 @@ This module installs and configures Sysstat.
 Module has been tested on:
 
 * Puppet 3.1
-* Debian 6.0/7.0 and RHEL/CentOS 6.4
+* Debian 6/7 and RHEL/CentOS 5/6
 
 Required modules:
 
