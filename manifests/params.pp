@@ -1,11 +1,4 @@
 class sysstat::params {
-  $enabled = true
-  $packages = ['sysstat']
-  $history = 7
-  $compressafter = 10
-  $sa1_options = $sadc_options
-  $sa2_options = ''
-
   case $::osfamily {
     debian: {
       $conf_sysstat = '/etc/sysstat/sysstat'
@@ -25,4 +18,11 @@ class sysstat::params {
       fail("Unsupported OS family: ${::osfamily}")
     }
   }
+
+  $enabled = true
+  $packages = ['sysstat']
+  $history = 7
+  $compressafter = 10
+  $sa1_options = $sadc_options
+  $sa2_options = ''
 }
