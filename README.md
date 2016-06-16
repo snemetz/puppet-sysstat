@@ -28,11 +28,12 @@ class { 'sysstat':
   enabled       => false|true,            # enable service
   packages      => [...],                 # list of packages to install
   conf_sysstat  => '...',                 # main sysstat config. file
-  history       => 7,                     # statistics history in days
+  history       => 28,                     # statistics history in days
   compressafter => 10,                    # compress old stats after days
   sadc_options  => '-S DISK',             # sysstat options
   sa1_options   => '-S DISK',
   sa2_options   => '',
+  zip_program   => 'bzip2',               # Zip program to use
 }
 ```
 
