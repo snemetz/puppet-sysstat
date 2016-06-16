@@ -15,14 +15,15 @@ class sysstat::params {
     }
 
     default: {
-      fail("Unsupported OS family: ${::osfamily}")
+      fail("Module ${module_name} is not supported on OS family: ${::osfamily}")
     }
   }
 
   $enabled = true
   $packages = ['sysstat']
-  $history = 7
+  $history = 28
   $compressafter = 10
   $sa1_options = $sadc_options
   $sa2_options = ''
+  $zip_program = 'bzip2'
 }

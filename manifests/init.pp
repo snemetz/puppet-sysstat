@@ -6,6 +6,7 @@ class sysstat (
   $sadc_options  = $sysstat::params::sadc_options,
   $sa1_options   = $sysstat::params::sa1_options,
   $sa2_options   = $sysstat::params::sa2_options,
+  $zip_program   = $sysstat::params::zip_program,
   $conf_sysstat  = $sysstat::params::conf_sysstat,
 ) inherits sysstat::params {
 
@@ -20,6 +21,7 @@ class sysstat (
     sadc_options  => $sadc_options,
     sa1_options   => $sa1_options,
     sa2_options   => $sa2_options,
+    zip_program   => $zip_program,
     conf_sysstat  => $conf_sysstat,
   }
 

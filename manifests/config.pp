@@ -5,6 +5,7 @@ class sysstat::config (
   $sadc_options,
   $sa1_options,
   $sa2_options,
+  $zip_program,
   $conf_sysstat
 ) {
   file { $conf_sysstat:
