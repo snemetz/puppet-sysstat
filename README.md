@@ -1,5 +1,7 @@
 # Puppet Sysstat module
 
+[![Build Status](https://travis-ci.org/snemetz/puppet-sysstat.png)](https://travis-ci.org/snemetz/puppet-sysstat)
+
 This module installs and configures Sysstat.
 
 ### Requirements
