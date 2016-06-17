@@ -1,1 +1,11 @@
-/pkg
+.bundle
+.rspec_system/
+*.orig
+*.patch
+*.rej
+*.swp
+Gemfile.lock
+pkg/
+# spec/fixtures/
+spec/fixtures/manifests/
+spec/fixtures/modules/
